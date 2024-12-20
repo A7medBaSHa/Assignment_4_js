@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="item bg-white w-75 mx-auto my-5 p-5 shadow-lg rounded-2">
+            <h1 class="text-center mb-3 text-info">Smart Login System</h1>
+            <div class="userName form-floating mb-3">
+              <input
+                type="text"
+                class="form-control d-none mb-3 border-primary-subtle"
+                id="userName"
+                placeholder="name@example.com"
+              />
+              <div class="alert alert-danger p-2 mt-2 d-none">
+                name must not be less than 3 characters, and capital characters,
+                small characters, numbers, _ and spaces are allowed without any
+                special characters
+              </div>
+              <label
+                for="userName"
+                class="d-none text-info"
+                id="labelUserNameInput"
+                >Enter your name</label
+              >
+            </div>
+            <div class="userEmail form-floating mb-3">
+              <input
+                type="email"
+                class="form-control border-primary-subtle"
+                id="userEmail"
+                placeholder="name@example.com"
+              />
+              <div class="alert alert-danger p-2 mt-2 d-none">
+                Email must not be less than 3 capital or small characters or
+                numbers in first then,should conatin @ ,then write like
+                yahoo,gmail,or another, then should put . and last after . put
+                like com,org,net or another. special characters and spaces are
+                not allowed.
+              </div>
+              <label for="userEmail" class="text-info">Enter your email</label>
+            </div>
+            <div class="userPassword form-floating">
+              <input
+                type="password"
+                class="form-control border-primary-subtle"
+                id="userPassword"
+                placeholder="Password"
+              />
+              <div class="alert alert-danger p-2 mt-2 d-none">
+                Password must not be less than 6 small or capital characters or
+                numbers and special characters like @,#,*,_ are allowed in
+                first,end or middle
+              </div>
+              <label for="userPassword" class="text-info"
+                >Enter your password</label
+              >
+            </div>
+            <p id="Success" class="text-center text-success mt-4 mb-0 d-none">
+              <i class="fa-solid fa-check fa-beat"></i>
+              Success
+            </p>
+            <p id="Wrong" class="text-center text-danger mt-4 mb-0 d-none">
+              <i class="fa-solid fa-xmark fa-beat"></i>
+              Email already exist
+            </p>
+            <p id="incorrect" class="text-center text-danger mt-4 mb-0 d-none">
+              <i class="fa-solid fa-xmark fa-beat"></i>
+              incorrect Email or Password
+            </p>
+            <p
+              id="incorrectPass"
+              class="text-center text-danger mt-4 mb-0 d-none"
+            >
+              <i class="fa-solid fa-xmark fa-beat"></i>
+              incorrect Password
+            </p>
+            <p id="fillInputs" class="text-center text-danger mt-4 mb-0 d-none">
+              <i class="fa-solid fa-exclamation fa-beat"></i>
+              Enter All inputs correct and don't leave any one empty
+            </p>
+            <div class="d-grid gap-2 mt-4">
+              <button
+                id="loginBtn"
+                class="btn btn-outline-primary"
+                type="button"
+              >
+                Login
+              </button>
+              <button
+                id="signUpBtn"
+                class="btn btn-outline-primary d-none"
+                type="button"
+              >
+                Sign Up
+              </button>
+            </div>
+            <p class="sign-up text-center text-black mt-3">
+              Don’t have an account?
+              <a href="#" class="text-black-50">Sign Up</a>
+            </p>
+            <p class="sign-in text-center text-black mt-3 d-none">
+              You have an account?
+              <a href="#" class="text-black-50">Signin</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
